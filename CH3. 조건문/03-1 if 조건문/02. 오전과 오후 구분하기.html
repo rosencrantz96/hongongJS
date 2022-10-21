@@ -8,14 +8,17 @@
 </head>
 <body>
     <script>
-        // 숫자를 입력 받습니다. 
-        const money = prompt('달러 단위의 금액을 입력해주세요.')
+        const date = new Date()
 
-        const dollar = Number(money)
-        const won = 1207 * dollar
+        const hour = date.getHours()
 
-        // 출력합니다. 
-        alert(`달러: ${dollar} → 원화: ${won}`)
+        if (hour < 12) {
+            alert('오전입니다.')
+        }
+
+        if (hour >= 12) {
+            alert('오후입니다.')
+        } 
     </script>
 </body>
 </html>

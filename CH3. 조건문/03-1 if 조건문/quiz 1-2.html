@@ -8,14 +8,13 @@
 </head>
 <body>
     <script>
-        // 숫자를 입력 받습니다. 
-        const money = prompt('달러 단위의 금액을 입력해주세요.')
+        const x = Number(prompt('숫자를 입력해주세요.'))
 
-        const dollar = Number(money)
-        const won = 1207 * dollar
-
-        // 출력합니다. 
-        alert(`달러: ${dollar} → 원화: ${won}`)
+        if (x > 10 && x < 20) {
+            console.log('조건을 만족합니다.')
+        } else {
+            console.log('조건을 만족하지 못합니다.')
+        }
     </script>
 </body>
 </html>
