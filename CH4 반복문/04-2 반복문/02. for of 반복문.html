@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for in 반복문은 반복 변수에 인덱스가 들어감. 반복문 내부에 요소를 사용하려면 반복문[i]와 같은 형태로 사용. 안정성을 위해 몇 가지 코드 더 추가. 
+        // 그래서 등장한 것이 for of 반복문! 
+        // 요소의 값을 반복할 떄 안정적으로 사용할 수 있음. 
+
+        const todos = ['우유 구매', '업무 메일 확인하기', '필라테스 수업']
+
+        for (const todo of todos) {
+            console.log(`오늘의 할 일: ${todo}`)
+        }
+    </script>
+</body>
+</html>

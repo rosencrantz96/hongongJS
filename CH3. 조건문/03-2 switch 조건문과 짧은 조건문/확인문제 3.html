@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const rawInput = prompt('태어난 해를 입력해주세요.', '')
+        const year = Number(rawInput)
+
+
+        //이렇게 풀면 undefined 문제 발생함... 
+        let 간 = year % 12 
+        let e = 간
+
+        if (e === 0) {result = '자'}
+        else if (e === 1) {result = '축'}
+        else if (e === 2) {result = '인'}
+        else if (e === 3) {result = '묘'}
+        else if (e === 4) {result = '진'}
+        else if (e === 5) {result = '사'}
+        else if (e === 6) {result = '오'}
+        else if (e === 7) {result = '미'}
+        else if (e === 8) {result = '신'}
+        else if (e === 9) {result = '유'}
+        else if (e === 10) {result = '술'}
+        else if (e === 11) {result = '해'}
+
+        let 띠 = year % 10
+        let f = 띠
+        if (f === 0) {result = '경'}
+        else if (f === 1) {result = '신'}
+        else if (f === 2) {result = '임'}
+        else if (f === 3) {result = '계'}       
+        else if (f === 4) {result = '갑'}
+        else if (f === 5) {result = '을'}
+        else if (f === 6) {result = '병'}
+        else if (f === 7) {result = '정'}
+        else if (f === 8) {result = '무'}
+        else if (f === 9) {result = '기'}
+    
+        alert(`${year}년은 ${간}${띠}년입니다.`)    </script>
+</body>
+</html>

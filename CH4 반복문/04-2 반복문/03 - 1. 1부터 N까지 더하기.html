@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let output = 0 
+        for (let i = 1; i <= 100; i++) { // 1부터 시작해야 하므로 i를 1로 초기화. 100보다 작거나 같아야 하므로 <= 100 사용. 
+            output += i // 변수 output을 0으로 초기화하고 여기에 i를 더하는 형태! 
+            //변수에 초깃값을 주고 반복하면서 어떤 처리를 한 뒤, 출력하는 코드는 고정적으로 사용하는 패턴이다. 이 때 초깃값이 매우 중요! 
+        }
+
+        console.log(`1~100까지 숫자를 모두 더하면 ${output}입니다.`)
+    </script>
+</body>
+</html>
