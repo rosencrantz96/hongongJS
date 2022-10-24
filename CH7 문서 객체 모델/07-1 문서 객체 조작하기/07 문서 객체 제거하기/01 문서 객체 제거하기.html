@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //removeChild() 메소드: 문서 객체 제거할 때 사용
+        //부모 객체.removeChild(자식 객체)
+        /* 
+        부모 객체는 
+        문서 객체.parentNode.removeChild(문서 객체)
+        이런 방식으로도 선택이 가능합니다. 
+        */
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout (() => {
+                const h1 = document.querySelector('h1')
+
+                h1.parentNode.removeChild(h1) // h1 태그의 부모 객체 body 태그에 접근하여 제거 
+                // document.body.removeChild(h1) : h1.parentNode가 document.body 이므로, 이렇게 써도 됨 
+            }, 3000)
+        })
+    </script>
+    <hr>
+    <h1>제거 대상 문서 객체</h1>
+    <hr>
+</body>
+</html>
