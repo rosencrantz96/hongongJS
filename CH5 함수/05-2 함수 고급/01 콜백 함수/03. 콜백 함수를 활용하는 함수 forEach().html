@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // forEach(): 메소드 배열이 갖고 있는 함수(메소드)로써 단순하게 배열 내부의 요소를 사용해서 콜백 함수 호출
+        // function (value, index, array) {}
+
+        const numbers = [273, 52, 103, 32, 57]
+
+        // 매개변수로 value, index, array를 갖는 콜백 함수를 사용 
+        numbers.forEach(function(value, index, array){ 
+            console.log(`${index}번째 요소: ${value}`)
+        })
+    </script>
+</body>
+</html>
